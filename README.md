@@ -16,4 +16,4 @@ Java 25, Spring Boot 4.1.2, MariaDB, Maven, HTML, CSS e JavaScript.
 
 Observação: utilizei a porta 3307 para o MariaDB e a porta 8080 para a aplicação.
 
-`Para o primeiro acesso, execute o arquivo usuarios_teste.sql no MariaDB. Entre com o usuário admin_teste e a senha admin123.`
+`Para o primeiro acesso, execute o arquivo teste.sql no MariaDB. Entre com o usuário teste e a senha teste123.`
