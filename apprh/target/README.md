@@ -15,3 +15,5 @@ Java 25, Spring Boot 4.1.2, MariaDB, Maven, HTML, CSS e JavaScript.
 5. Acessar `http://localhost:8080/login.html`.
 
 Observação: utilizei a porta 3307 para o MariaDB e a porta 8080 para a aplicação.
+
+`Para o primeiro acesso, execute o arquivo usuarios_teste.sql no MariaDB. Entre com o usuário admin_teste e a senha admin123.`
