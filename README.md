@@ -4,7 +4,7 @@ O AppRH é um sistema de recursos humanos desenvolvido para a disciplina de Dese
 O sistema permite cadastrar e listar funcionários, além de controlar o acesso por meio de login.
 ## Como executar
 
-1. Acesse https://github.com/RobertaTargino/AppRH.
+1. Acesse o repositorio desse arquivo.
 2. Clique em Code e depois em Download ZIP.
 3. Extraia o arquivo baixado.
 4. Abra o Eclipse e selecione File > Import.
@@ -12,7 +12,6 @@ O sistema permite cadastrar e listar funcionários, além de controlar o acesso 
 6. Selecione a pasta extraída que contém o arquivo `pom.xml` e clique em Finish.
 
 ## Criar o banco de dados
-
 1. Abra o MySQL Client ou MariaDB Client.
 2. Informe a senha configurada durante a instalação do MariaDB.
 3. Execute o comando:
@@ -61,11 +60,10 @@ ON DUPLICATE KEY UPDATE
 Esse comando cadastra o usuário necessário para entrar no sistema.
 ## Acessar o AppRH
 
-Abra http://localhost:8080/login.html.
+Abra http://localhost:8080/login.html
 
-Usuário: teste
-Senha: teste123
+**Usuário:** teste
+**Senha:** teste123
 
 Após o login, será possível cadastrar e listar funcionários.
-
 Observação: o MariaDB utiliza a porta 3307 e o AppRH utiliza a porta 8080.
