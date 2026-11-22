@@ -88,8 +88,7 @@ SELECT username, role FROM users;
 ```
 Para acessar o sistema
 
-| Usuário | `teste` |
-| Senha | `teste123` |
+**Usuário**  `teste` **Senha** `teste123` 
 
 Após cadastrar o usuário, acesse:
 
