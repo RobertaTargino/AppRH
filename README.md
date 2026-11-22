@@ -100,7 +100,7 @@ http://localhost:8080/login.html
 
 Entre com as credenciais acima. Depois do login, será possível acessar as funcionalidades disponíveis, incluindo o cadastro e a listagem de funcionários.
 
-## Observações
+## Informações importantes
 
 - O MariaDB utiliza a porta **3307**.
 - O AppRH utiliza a porta **8080**.
