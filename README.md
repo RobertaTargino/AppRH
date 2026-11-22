@@ -9,8 +9,7 @@ Tecnologias utilizadas no projeto.
 Spring Boot 4.1.2,
 MariaDB,
 Maven,
-HTML, CSS, JavaScript e 
-Lombok.`
+HTML, CSS, JavaScript e Lombok.`
 
 ## Como executar
 
