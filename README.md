@@ -86,11 +86,8 @@ Para verificar se o usuário foi cadastrado:
 ```sql
 SELECT username, role FROM users;
 ```
+Para acessar o sistema
 
-Credenciais para acessar o sistema
-
-| Campo | Informação |
-|---|---|
 | Usuário | `teste` |
 | Senha | `teste123` |
 
