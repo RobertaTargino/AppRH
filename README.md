@@ -1,105 +1,57 @@
 # AppRH
 
 O AppRH é um sistema de recursos humanos desenvolvido para a disciplina de Desenvolvimento de Sistemas Corporativos, do curso de Sistemas para Internet da UERN.
-O sistema permite cadastrar e listar funcionários.
+O sistema permite cadastrar e listar funcionários, cadastrar usuários e controlar o acesso por meio de login.
 
-## Tecnologias utilizadas
-
-Java 25, Spring Boot 4.1.2, MariaDB, Maven, Lombok, HTML, CSS e JavaScript.
+Tecnologias utilizadas: Java, Spring Boot, MariaDB, HTML, CSS e JavaScript.
 
 ## Como executar
-### 1. Baixar o projeto
 
-1. Baixe o projeto pelo GitHub.
-2. Extraia o arquivo ZIP.
-3. Abra o Eclipse.
-4. Selecione File > Import > Maven > Existing Maven Projects.
-5. Selecione a pasta que contém o arquivo `pom.xml`.
-6. Clique em Finish e aguarde o carregamento das dependências.
-
-### 2. Configurar o banco de dados
-
-Instale o MariaDB utilizando a porta 3307.
-Abra o MySQL Client ou MariaDB Client e execute:
-
-```sql
-CREATE DATABASE IF NOT EXISTS apprh;
-```
-
-### 3. Configurar a conexão
-No Eclipse, abra o arquivo `src/main/resources/application.properties` e confira as configurações:
-
-```properties
-spring.datasource.url=jdbc:mariadb://localhost:3307/apprh
-spring.datasource.username=${DB_USERNAME:root}
-spring.datasource.password=${DB_PASSWORD}
-spring.jpa.hibernate.ddl-auto=update
-server.port=8080
-```
-
-Para configurar a senha do banco de dados no Eclipse:
-
-1. Acesse Run > Run Configurations.
-2. Selecione a configuração da classe `ApprhApplication`.
-3. Abra a aba Environment.
-4. Clique em Add.
-5. Em Name, informe `DB_PASSWORD`.
-6. Em Value, informe a senha configurada no MariaDB.
-7. Clique em Apply.
-
-### 4. Iniciar a aplicação
-
-Execute a classe `ApprhApplication.java` utilizando a configuração que contém a variável `DB_PASSWORD`.
-Aguarde a inicialização do Spring Boot. As tabelas serão criadas ou atualizadas automaticamente pelo Hibernate.
+1. Acesse o repositório https://github.com/RobertaTargino/AppRH.
+2. Clique em Code e depois em Download ZIP.
+3. Extraia o arquivo baixado.
+4. Abra o Eclipse e selecione File > Import.
+5. Escolha Maven > Existing Maven Projects e clique em Next.
+6. Clique em Browse e selecione a pasta extraída que contém o arquivo `pom.xml`.
+7. Clique em Finish e aguarde o Eclipse carregar o projeto.
+8. Crie um banco de dados chamado `apprh` no MariaDB.
+9. Configure a senha do banco de dados no Eclipse, acessando Run > Run Configurations > Environment e adicionando a variável `DB_PASSWORD`.
+10. Execute a classe `ApprhApplication.java`.
+11. Após iniciar a aplicação, execute o arquivo `teste.sql` no MariaDB para cadastrar o usuário de teste.
+12. Acesse http://localhost:8080/login.html.
 
 ## Primeiro acesso
-Para acessar o sistema pela primeira vez, é necessário cadastrar um usuário no banco de dados.
-Após iniciar a aplicação, abra o MySQL Client ou MariaDB Client e execute:
 
-```sql
-USE apprh;
-```
+Usuário: teste
+Senha: teste123
+Após o login, será possível cadastrar e listar funcionários.
 
-Em seguida, execute o arquivo `teste.sql` disponibilizado no projeto ou utilize o comando:
+## Erros comuns
 
-```sql
-INSERT INTO users (username, password, role)
-VALUES (
-    'teste',
-    '$2a$12$MDo5RkUEND8Jfo1NMyp83O9.594DUgU/vKqwB2v6ePBJ2q2mnyRie',
-    'ADMIN'
-)
-ON DUPLICATE KEY UPDATE
-    password = VALUES(password),
-    role = VALUES(role);
-```
+### Erro de conexão com o banco de dados
 
-Esse comando cadastra um usuário de teste com perfil ADMIN. A senha é armazenada utilizando BCrypt.
-Para verificar o cadastro, execute:
+Verifique se o MariaDB está iniciado, se o banco `apprh` foi criado e se a senha configurada na variável `DB_PASSWORD` está correta. Confira também se o MariaDB utiliza a porta 3307.
 
-```sql
-SELECT username, role FROM users;
-```
+### Usuário ou senha inválidos
 
-## Acessar o sistema
+Verifique se o arquivo `teste.sql` foi executado corretamente no banco `apprh`. Esse arquivo cadastra o usuário necessário para o primeiro acesso.
 
-Abra o navegador e acesse:
+### Erro 404 ao acessar o sistema
 
-http://localhost:8080/login.html
+Verifique se a aplicação está em execução no Eclipse. Se estiver desligada, execute novamente a classe `ApprhApplication.java`.
 
-Utilize as seguintes credenciais:
+### Porta 8080 em uso
 
-- Usuário: `teste`
-- Senha: `teste123`
+Verifique se outra aplicação está utilizando a porta 8080. Encerre o processo que está ocupando a porta antes de iniciar o AppRH.
 
-Após realizar o login, será possível acessar as funcionalidades do sistema, incluindo o cadastro e a listagem de funcionários.
+### Erros relacionados ao Lombok
 
-## Observações
+O projeto utiliza Lombok para gerar métodos automaticamente. Caso o Eclipse apresente erros nos métodos `get` e `set`, verifique se o Lombok está configurado corretamente na IDE e se as dependências Maven foram carregadas.
 
-- O MariaDB utiliza a porta 3307.
-- A aplicação utiliza a porta 8080.
-- O usuário de teste precisa ser cadastrado no banco antes do primeiro login.
-- O projeto utiliza Lombok, que pode exigir configuração adicional no Eclipse para o reconhecimento dos métodos gerados.
+### Erros ao importar o projeto
 
-## Teste de execução
-O projeto foi baixado e executado em outro computador. Após configurar o MariaDB, criar o banco de dados e cadastrar o usuário de teste, a aplicação iniciou e o login foi realizado com sucesso.
+Verifique se a pasta selecionada contém o arquivo `pom.xml`. No Eclipse, clique com o botão direito no projeto e selecione Maven > Update Project para atualizar as dependências.
+
+## Observação
+
+O MariaDB utiliza a porta 3307 e a aplicação utiliza a porta 8080.
