@@ -13,14 +13,6 @@ O sistema permite cadastrar e listar funcionários, cadastrar usuários e contro
 - HTML, CSS e JavaScript
 - Lombok
 
-## Pré-requisitos
-
-Para executar o projeto, é necessário ter instalado:
-
-- Java 25
-- Eclipse IDE
-- MariaDB Server
-
 ## Como executar
 
  1. Baixar e importar o projeto
