@@ -109,7 +109,5 @@ Entre com as credenciais acima. Depois do login, será possível acessar as func
 - O projeto utiliza Lombok. Algumas instalações do Eclipse podem precisar da integração do Lombok para reconhecer automaticamente os métodos `get` e `set`.
 
 ## Teste em outro computador
-
-'O projeto foi baixado e executado em outro computador, com instalação do MariaDB, criação do banco `apprh` e cadastro do usuário de demonstração.
-
-Após essas configurações, foi possível iniciar o AppRH e realizar o login com sucesso.'
+O projeto foi baixado e executado em outro computador, com instalação do MariaDB, criação do banco `apprh` e cadastro do usuário de demonstração.
+Após essas configurações, foi possível iniciar o AppRH e realizar o login com sucesso.
