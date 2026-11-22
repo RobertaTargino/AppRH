@@ -1,7 +1,7 @@
 AppRH — Sistema de Recursos Humanos
 
 O AppRH é um sistema web desenvolvido para a disciplina Desenvolvimento de Sistemas Corporativos, do curso de Sistemas para Internet da UERN.
-O sistema permite cadastrar e listar funcionários, cadastrar usuários e controlar o acesso por meio de login, utilizando os perfis ADMIN e USER.
+O sistema permite cadastrar e listar funcionários.
 
 Tecnologias utilizadas no projeto.
 
