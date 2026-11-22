@@ -5,12 +5,12 @@ O sistema permite cadastrar e listar funcionários.
 
 Tecnologias utilizadas no projeto.
 
-- Java 25
-- Spring Boot 4.1.2
-- MariaDB
-- Maven
-- HTML, CSS e JavaScript
-- Lombok
+Java 25
+Spring Boot 4.1.2
+MariaDB
+Maven
+HTML, CSS e JavaScript
+Lombok
 
 ## Como executar
 
