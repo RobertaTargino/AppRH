@@ -47,10 +47,10 @@ server.port=8080
 Para informar a senha do MariaDB:
 
 1. No Eclipse, acesse **Run → Run Configurations**.
-2. Selecione a configuração da classe `ApprhApplication`.
+2. Selecione a configuração da classe ApprhApplication.
 3. Abra a aba **Environment**.
 4. Clique em **Add**.
-5. Em **Name**, informe `DB_PASSWORD`.
+5. Em **Name**, informe DB_PASSWORD.
 6. Em **Value**, informe a senha do MariaDB.
 7. Clique em **Apply**.
 
