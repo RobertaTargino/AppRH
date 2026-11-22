@@ -1,7 +1,6 @@
-# AppRH — Sistema de Recursos Humanos
+AppRH — Sistema de Recursos Humanos
 
 O AppRH é um sistema web desenvolvido para a disciplina Desenvolvimento de Sistemas Corporativos, do curso de Sistemas para Internet da UERN.
-
 O sistema permite cadastrar e listar funcionários, cadastrar usuários e controlar o acesso por meio de login, utilizando os perfis ADMIN e USER.
 
 ## Tecnologias utilizadas
@@ -27,7 +26,6 @@ O sistema permite cadastrar e listar funcionários, cadastrar usuários e contro
  2. Configurar o banco de dados
 
 Instale o MariaDB e configure a conexão com a porta **3307**.
-
 Abra o MySQL Client ou MariaDB Client e execute:
 
 ```sql
@@ -37,7 +35,6 @@ CREATE DATABASE IF NOT EXISTS apprh;
 O banco de dados será utilizado para armazenar os usuários e funcionários cadastrados.
 
 3. Configurar a conexão no Eclipse
-
 Abra o arquivo `src/main/resources/application.properties` e confira:
 
 ```properties
@@ -59,7 +56,6 @@ Para informar a senha do MariaDB:
 7. Clique em **Apply**.
 
 A senha do banco não deve ser publicada no GitHub.
-
 Primeiro acesso — Cadastro do usuário de teste
 
 **IMPORTANTE: Em uma instalação nova, é necessário cadastrar um usuário no banco de dados antes de conseguir entrar no sistema e acessar o cadastro de funcionários.**
