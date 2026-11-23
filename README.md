@@ -20,7 +20,7 @@ Abaixo, deixarei orientações para realizar o download e a execução do sistem
 5. Escolha Maven > Existing Maven Projects e clique em Next.
 6. Selecione a pasta extraída que contém o arquivo pom.xml e clique em Finish.
 
-**Configurar o Java**
+**Configurar o Java no eclipse**
 
 1. No Eclipse, acesse Window > Preferences.
 2. Selecione Java > Installed JREs.
