@@ -4,24 +4,49 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data // Gera getters e setters automaticamente
-@AllArgsConstructor 
-@NoArgsConstructor 
 @Entity
-@Table(name = "users") // Define o nome da tabela
+@Table(name = "users")
 public class User {
 
-    @Id // Define username como chave primária
+    @Id
     private String username;
 
-    // Permite receber a senha
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     private String role;
 
+    public User() {
+    }
+
+    public User(String username, String password, String role) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 }
