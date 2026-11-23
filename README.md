@@ -5,7 +5,7 @@ O sistema permite cadastrar e listar funcionários, além de controlar o acesso 
 
 Abaixo, deixarei orientações para realizar o download e a execução do sistema em sua máquina.
 
-** Requisitos**
+**Requisitos**
 
 - Java JDK 25;
 - Eclipse IDE;
@@ -28,7 +28,7 @@ Abaixo, deixarei orientações para realizar o download e a execução do sistem
 4. Caso não esteja, clique em Add > Standard VM e selecione a pasta de instalação do JDK 25.
 5. Marque o Java 25 e clique em Apply and Close.
 
-** Criar o banco de dados**
+**Criar o banco de dados**
 
 1. Abra o MySQL Client ou MariaDB Client.
 2. Informe a senha configurada durante a instalação do MariaDB.
